@@ -3,6 +3,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    width: auto;
 }
 
 body {
@@ -13,16 +14,23 @@ body {
     font-family: 'Roboto' ;
 }
 
+/* header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+} */
+
 fieldset {
     border: 0;
 }
 
 /* Header */
 .header {
-    width: 100%;
+    width: auto;
     height: 100px;
     display: grid;
-    grid-template-columns: 30% auto 30%;
+    grid-template-columns: 30% auto 25%;
+    /* grid-auto-flow: column; */
     align-items: center;
     background: rgb(25,24,24);
     background: linear-gradient(0deg, rgba(25,24,24,0.28925073447347693) 0%, rgba(25,24,24,0.6197829473586309) 24%);
@@ -49,22 +57,24 @@ fieldset {
 }
 .header__menu {
     display: inherit;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
-    grid-gap: 40px;
+    /* justify-items: center; */
+    grid-gap: 20px;
 }
 .header__menu-item {
     text-transform: uppercase;
 }
 .header__login {
     display: inherit;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 150px 150px;
     align-items: center;
-    justify-content: center;
-    grid-gap: 40px;
+    justify-content: start;
+    /* grid-gap: 40px; */
 }
 .header__login-link {
     justify-self: right;
+    padding-right: 30px;
     text-transform: uppercase;
 }
 .header__login-demo {
@@ -294,7 +304,7 @@ fieldset {
 .footer__links {
     display: inherit;
     grid-row: 3;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 30% auto;
     align-items: center;
     justify-items: start;
 }
@@ -310,4 +320,50 @@ fieldset {
 }
 .footer__links-site-item {
     margin-right: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .header {
+        height: 120px;
+    }
+    .header__menu {
+        grid-template-columns: repeat(auto-fill, 100px);
+    }
+    .header__login {
+        grid-template-columns: 100px 130px;
+    }
+    .header__login-link {
+        justify-self: right;
+        padding-right: 10px;
+    }
+    .header__login-demo {
+        width: 130px;
+        height: 42px;
+        border-radius: 25px;
+        border-style: none;
+        background-color: #4abf4f;
+        transition: background-color 0.3s;
+        color: white;
+        justify-self: left;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
 }
