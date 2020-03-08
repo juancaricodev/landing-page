@@ -32,7 +32,7 @@ fieldset {
     grid-template-columns: 30% auto 25%;
     /* grid-auto-flow: column; */
     align-items: center;
-    background: rgb(25,24,24);
+    /* background: rgb(25,24,24); */
     background: linear-gradient(0deg, rgba(25,24,24,0.28925073447347693) 0%, rgba(25,24,24,0.6197829473586309) 24%);
     color: white;
     font-weight: bold;
@@ -248,7 +248,6 @@ fieldset {
     display: inherit;
     align-content: start;
     grid-column: 4;
-    align-content: start;
     grid-gap: 40px;
 }
 .footer__main-options-item {
@@ -276,9 +275,9 @@ fieldset {
 .footer__subscribe-input-email {
     height: 60px;
     width: 250px;
-    border-radius: 30px 0 0 30px;
+    border-radius: 30px;
     border: none;
-    padding: 0 50px 0 20px;
+    padding: 0 60px 0 20px;
     outline: none;
     font-family: inherit;
     font-size: 16px;
@@ -295,7 +294,7 @@ fieldset {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
-    margin-left: -40px;
+    margin-left: -50px;
 }
 .footer__subscribe-input-button:hover {
     background-color: rgb(100, 219, 64);
@@ -324,6 +323,7 @@ fieldset {
 
 /* Responsive */
 @media screen and (max-width: 1200px) {
+    /* Header */
     .header {
         height: 120px;
     }
@@ -350,18 +350,135 @@ fieldset {
         font-size: 13px;
         font-weight: bold;
     }
+    /* Main */
+    .main__form {
+        width: 60%;
+    }
+    /* Footer */
+    .footer {
+        height: 900px;
+        padding: 80px 100px 50px 100px;
+        grid-template-rows: repeat(3, auto);
+    }
+    .footer__main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 60% 40%;
+        grid-template-rows: 65% 25%;
+        height: 600px;
+        }
+    .footer__main-options1 {
+        grid-column: 1;
+    }
+    .footer__main-options2 {
+        grid-column: 2;
+    }
+    .footer__main-options3 {
+        grid-column: 3;
+    }
+    .footer__main-logo {
+        grid-row: 2;
+        grid-column: span 3;
+        grid-template-rows: 50px 40px;
+        grid-template-columns: 70px 1fr;
+        align-self: center;
+        margin-top: 150px;
+        width: 100%;
+    }
+    .footer__main-logo-icon {
+        grid-column: 1;
+    }
+    .footer__main-logo--bigtext {
+        grid-column: 2;
+    }
+    .footer__main-logo-smalltext {
+        grid-row: 2;
+        grid-column: span 2;
+        align-self: end;
+    }
 }
 
 @media screen and (max-width: 900px) {
-
+    /* Hamburguer Icon + change position with button */
+    .footer {
+        height: 1000px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .main__form {
+        grid-template-columns: 1fr;
+        height: 1500px;
+    }
+    .item--short {
+        grid-column: 1 / span 2;
+    }
+    .footer {
+        padding: 80px 20px 50px 50px;
+    }
+    .footer__links {
+        grid-template-rows: 1fr 1fr;
+    }
+    .footer__links-site {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+    .footer__links-social {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+}
 
+@media screen and (max-width: 680px) {
+    .footer__subscribe-input {
+        display: inherit;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .footer__subscribe-input-email {
+        grid-row: 1;
+        padding: 0 20px 0 20px;
+        width: 300px;
+    }
+    .footer__subscribe-input-button {
+        grid-row: 2;
+        margin-left: 0;
+        width: 340px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-
+    .footer {
+        height: 1800px;
+    }
+    .footer__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        height: 800px;
+    }
+    .footer__main-options1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .footer__main-options2 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .footer__main-options3 {
+        grid-row: 3;
+        grid-column: 1;
+        grid-gap: 0;
+    }
+    .footer__main-logo {
+        grid-row: 4;
+        grid-column: 1;
+        align-self: start;
+    }
+    .footer__main-options-item {
+        margin-bottom: 20px;
+    }
+    .item--bold {
+        margin: 30px 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
