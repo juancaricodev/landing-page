@@ -6,6 +6,38 @@
     width: auto;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../img/fonts/icomoon.eot?f5a6l7');
+    src:  url('../img/fonts/icomoon.eot?f5a6l7#iefix') format('embedded-opentype'),
+        url('../img/fonts/icomoon.ttf?f5a6l7') format('truetype'),
+        url('../img/fonts/icomoon.woff?f5a6l7') format('woff'),
+        url('../img/fonts/icomoon.svg?f5a6l7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+
 body {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
@@ -26,7 +58,7 @@ fieldset {
 
 /* Header */
 .header {
-    width: auto;
+    width: 100%;
     height: 100px;
     display: grid;
     grid-template-columns: 30% auto 25%;
@@ -38,6 +70,7 @@ fieldset {
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 1px;
+    position: fixed;
 }
 .header a {
     transition: color 0.3s;
@@ -57,13 +90,20 @@ fieldset {
 }
 .header__menu {
     display: inherit;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     justify-content: center;
-    /* justify-items: center; */
     grid-gap: 20px;
 }
 .header__menu-item {
+    display: inherit;
     text-transform: uppercase;
+}
+.burguer-button {
+    font-size: 22px;
+    display: none;
+}
+.burguer-button:hover {
+    cursor: pointer;
 }
 .header__login {
     display: inherit;
@@ -399,6 +439,36 @@ fieldset {
 
 @media screen and (max-width: 900px) {
     /* Hamburguer Icon + change position with button */
+    .header {
+        position: fixed;
+        grid-template-columns: 30% auto 200px;
+    }
+    .header__menu {
+        grid-template-columns: auto;
+        justify-content: end;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .header__menu-item {
+        text-transform: uppercase;
+        display: none;
+    }
+    .burguer-button {
+        font-size: 22px;
+        display: block;
+    }
+    .header__login-link {
+        display: none;
+    }
+    .burguer-button {
+        grid-column: 3;
+        padding-right: 20px;
+    }
+    .header__login {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: start;
+    }
     .footer {
         height: 1000px;
     }
