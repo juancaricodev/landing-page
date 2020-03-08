@@ -438,10 +438,10 @@ fieldset {
 }
 
 @media screen and (max-width: 900px) {
-    /* Hamburguer Icon + change position with button */
     .header {
         position: fixed;
         grid-template-columns: 30% auto 200px;
+        height: 70px;
     }
     .header__menu {
         grid-template-columns: auto;
@@ -518,11 +518,11 @@ fieldset {
 
 @media screen and (max-width: 480px) {
     .footer {
-        height: 1800px;
+        height: 1500px;
     }
     .footer__main {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: auto auto 150px 50px;
         height: 800px;
     }
     .footer__main-options1 {
@@ -551,6 +551,52 @@ fieldset {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
+    .main__form {
+        padding: 20px;
+        width: 80%;
+    }
+    .footer {
+        height: 1630px;
+        padding: 80px 20px 50px 40px;
+    }
+    .footer__main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 150px 50px;
+        height: 800px;
+    }
+    .footer__main-logo {
+        grid-gap: 20px;
+    }
+    .footer__subscribe-input-email {
+        padding: 0 20px 0 20px;
+        width: 250px;
+    }
+    .footer__subscribe-input-button {
+        width: 290px;
+    }
+    .footer__links-site {
+        display: inherit;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        font-size: 18px;
+        grid-gap: 20px;
+    }
+    .footer__links-social img {
+        margin-right: 50px;
+    }
+}
 
+@media screen and (max-width: 375px) {
+    .footer {
+        height: 1630px;
+        padding: 80px 20px 50px 20px;
+    }
+    .main__form {
+        height: 1750px;
+    }
+    .footer__links-site-item {
+        margin: 0;
+        grid-gap: 30px;
+    }
 }
