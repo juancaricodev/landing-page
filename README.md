@@ -10,6 +10,10 @@ This clone page is fully responsive.
 * CSS Grid Layout
 * BEM Methodology
 
+## Demo
+
+You can check the result [here!](https://juancarico92.github.io/landing-page/)
+
 ### Responsive Page Preview
 ![Preview](./assets/img/preview.png "Responsive Preview")
 
