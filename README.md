@@ -12,7 +12,7 @@ This clone page is fully responsive.
 
 ## Demo
 
-You can check the result [here!](https://juancarico92.github.io/landing-page/)
+You can check the result [here!](https://juancaricodev.github.io/landing-page/)
 
 ### Responsive Page Preview
 ![Preview](./assets/img/preview.png "Responsive Preview")
