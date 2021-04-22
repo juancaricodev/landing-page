@@ -7,7 +7,6 @@
 }
 .main__form {
   width: 40%;
-  /* height: 1300px; */
   height: auto;
   margin-top: 100px;
   padding: 70px;
@@ -65,7 +64,6 @@
 }
 .item--long textarea {
   width: 95%;
-  /* height: 200px; */
   padding: 10px;
   font-family: inherit;
   font-size: inherit;
