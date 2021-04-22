@@ -78,3 +78,66 @@
   cursor: pointer;
 }
 
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .header {
+    height: 120px;
+  }
+  .header__menu {
+    grid-template-columns: repeat(auto-fill, 100px);
+  }
+  .header__login {
+    grid-template-columns: 100px 130px;
+  }
+  .header__login-link {
+    justify-self: right;
+    padding-right: 10px;
+  }
+  .header__login-demo {
+    width: 130px;
+    height: 42px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: #4abf4f;
+    transition: background-color 0.3s;
+    color: white;
+    justify-self: left;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    position: fixed;
+    grid-template-columns: 30% auto 200px;
+    height: 70px;
+  }
+  .header__menu {
+    grid-template-columns: auto;
+    justify-content: end;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .header__menu-item {
+    text-transform: uppercase;
+    display: none;
+  }
+  .burguer-button {
+    font-size: 22px;
+    display: block;
+  }
+  .header__login-link {
+    display: none;
+  }
+  .burguer-button {
+    grid-column: 3;
+    padding-right: 20px;
+  }
+  .header__login {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+  }
+}
