@@ -8,45 +8,45 @@
 .main__form {
   width: 40%;
   height: 1300px;
+  margin-top: 100px;
+  padding: 70px;
   display: inherit;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  background-color: rgb(255, 255, 255);
-  margin-top: 100px;
-  padding: 70px;
   font-size: 16px;
   border-radius: 10px;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.24);
 }
 .main__form-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   margin-bottom: 15px;
-  font-weight: bold;
   grid-column: 1 / span 2;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .main__form-item {
+  margin-top: 20px;
   display: grid;
   grid-template: 1fr 1fr / 1fr;
   color: rgba(0, 0, 0, 0.678);
-  margin-top: 20px;
 }
 .main__form-item label {
   margin-bottom: 5px;
 }
 .main__form-item input {
+  width: 90%;
   height: 30px;
   padding: 5px;
-  width: 90%;
   font-family: inherit;
   font-size: inherit;
   border: 1.2px solid rgba(0, 0, 0, 0.103);
 }
 .main__form-item select {
+  width: 95%;
   height: 41px;
   padding: 5px;
-  width: 95%;
   font-family: inherit;
   font-size: inherit;
   border: 1.2px solid rgba(0, 0, 0, 0.103);
@@ -62,9 +62,9 @@
 }
 .item--long textarea {
   width: 95%;
+  padding: 10px;
   font-family: inherit;
   font-size: inherit;
-  padding: 10px;
   line-height: 2em;
   border: 1.2px solid rgba(0, 0, 0, 0.103);
 }
@@ -72,21 +72,21 @@
   width: 130px;
   height: 55px;
   margin-top: 20px;
+  justify-self: left;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: 2px solid #4abf4f;
   border-radius: 30px;
   border-style: none;
   background-color: #4abf4f;
   transition: background-color 0.1s;
-  color: white;
-  border: 2px solid #4abf4f;
-  justify-self: left;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 .main__form-submit:hover {
-  background-color: white;
   color: #4abf4f;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -99,8 +99,8 @@
 
 @media screen and (max-width: 768px) {
   .main__form {
-    grid-template-columns: 1fr;
     height: 1500px;
+    grid-template-columns: 1fr;
   }
   .item--short {
     grid-column: 1 / span 2;
@@ -109,8 +109,8 @@
 
 @media screen and (max-width: 420px) {
   .main__form {
-    padding: 20px;
     width: 80%;
+    padding: 20px;
   }
 }
 
