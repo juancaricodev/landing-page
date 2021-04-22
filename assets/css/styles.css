@@ -21,7 +21,6 @@
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -46,12 +45,6 @@ body {
     font-family: 'Roboto' ;
 }
 
-/* header {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-} */
-
 fieldset {
     border: 0;
 }
@@ -62,9 +55,7 @@ fieldset {
     height: 100px;
     display: grid;
     grid-template-columns: 30% auto 25%;
-    /* grid-auto-flow: column; */
     align-items: center;
-    /* background: rgb(25,24,24); */
     background: linear-gradient(0deg, rgba(25,24,24,0.28925073447347693) 0%, rgba(25,24,24,0.6197829473586309) 24%);
     color: white;
     font-weight: bold;
@@ -110,7 +101,6 @@ fieldset {
     grid-template-columns: 150px 150px;
     align-items: center;
     justify-content: start;
-    /* grid-gap: 40px; */
 }
 .header__login-link {
     justify-self: right;
