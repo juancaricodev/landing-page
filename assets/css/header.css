@@ -1,20 +1,20 @@
 /* Header */
 .header {
+  position: fixed;
   width: 100%;
   height: 100px;
   display: grid;
   grid-template-columns: 30% auto 25%;
   align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: white;
   background: linear-gradient(
     0deg,
     rgba(25, 24, 24, 0.28925073447347693) 0%,
     rgba(25, 24, 24, 0.6197829473586309) 24%
   );
-  color: white;
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 1px;
-  position: fixed;
 }
 .header a {
   transition: color 0.3s;
@@ -56,22 +56,22 @@
   justify-content: start;
 }
 .header__login-link {
-  justify-self: right;
   padding-right: 30px;
+  justify-self: right;
   text-transform: uppercase;
 }
 .header__login-demo {
   width: 130px;
   height: 42px;
+  justify-self: left;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
   border-radius: 25px;
   border-style: none;
   background-color: #4abf4f;
   transition: background-color 0.3s;
-  color: white;
-  justify-self: left;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: bold;
 }
 .header__login-demo:hover {
   background-color: rgb(100, 219, 64);
@@ -90,29 +90,29 @@
     grid-template-columns: 100px 130px;
   }
   .header__login-link {
-    justify-self: right;
     padding-right: 10px;
+    justify-self: right;
   }
   .header__login-demo {
     width: 130px;
     height: 42px;
+    justify-self: left;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
     border-radius: 25px;
     border-style: none;
     background-color: #4abf4f;
     transition: background-color 0.3s;
-    color: white;
-    justify-self: left;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
   }
 }
 
 @media screen and (max-width: 900px) {
   .header {
     position: fixed;
-    grid-template-columns: 30% auto 200px;
     height: 70px;
+    grid-template-columns: 30% auto 200px;
   }
   .header__menu {
     grid-template-columns: auto;
@@ -121,19 +121,19 @@
     grid-row: 1;
   }
   .header__menu-item {
-    text-transform: uppercase;
     display: none;
+    text-transform: uppercase;
   }
   .burguer-button {
-    font-size: 22px;
     display: block;
+    font-size: 22px;
   }
   .header__login-link {
     display: none;
   }
   .burguer-button {
-    grid-column: 3;
     padding-right: 20px;
+    grid-column: 3;
   }
   .header__login {
     grid-column: 3;
