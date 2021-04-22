@@ -7,7 +7,8 @@
 }
 .main__form {
   width: 40%;
-  height: 1300px;
+  /* height: 1300px; */
+  height: auto;
   margin-top: 100px;
   padding: 70px;
   display: inherit;
@@ -29,10 +30,12 @@
 .main__form-item {
   margin-top: 20px;
   display: grid;
-  grid-template: 1fr 1fr / 1fr;
+  grid-template: auto auto / 1fr;
+  gap: 18px;
   color: rgba(0, 0, 0, 0.678);
 }
 .main__form-item label {
+  height: fit-content;
   margin-bottom: 5px;
 }
 .main__form-item input {
@@ -62,6 +65,7 @@
 }
 .item--long textarea {
   width: 95%;
+  /* height: 200px; */
   padding: 10px;
   font-family: inherit;
   font-size: inherit;
@@ -86,6 +90,7 @@
 }
 .main__form-submit:hover {
   color: #4abf4f;
+  border: 2px solid #4abf4f;
   background-color: white;
   cursor: pointer;
 }
