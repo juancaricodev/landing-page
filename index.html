@@ -1,195 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Nauto</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="header">
-            <div class="header__logo">
-                <img class="header__logo-img" src="./assets/img/logo.svg" alt="Logo Nauto" />
-            </div>
-            <menu class="header__menu">
-                <li class="header__menu-item">
-                    <a href="">Product</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="">Partners</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="">Resources</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="">Careers</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="">Company</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="">Contact</a>
-                </li>
-                <li class="">
-                    <a class="icon-menu burguer-button"></a>
-                </li>
-            </menu>
-            <div class="header__login">
-                <a href="" class="header__login-link">Login</a>
-                <input type="button" value="Request demo" class="header__login-demo" />
-            </div>
-        </nav>
+      <nav class="header">
+        <div class="header__logo">
+          <img
+            class="header__logo-img"
+            src="./assets/img/logo.svg"
+            alt="Logo Nauto"
+          />
+        </div>
+        <menu class="header__menu">
+          <li class="header__menu-item">
+            <a href="">Product</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="">Partners</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="">Resources</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="">Careers</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="">Company</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="">Contact</a>
+          </li>
+          <li class="">
+            <a class="icon-menu burguer-button"></a>
+          </li>
+        </menu>
+        <div class="header__login">
+          <a href="" class="header__login-link">Login</a>
+          <input
+            type="button"
+            value="Request demo"
+            class="header__login-demo"
+          />
+        </div>
+      </nav>
     </header>
     <main class="main">
-        <form class="main__form">
-            <label class="main__form-title">Fleet Inquiry Form</label>
-            <fieldset class="main__form-item item--short">
-                <label>First name*</label>
-                <input type="text" />
-            </fieldset>
-            <fieldset class="main__form-item item--short">
-                <label>Last name*</label>
-                <input type="text" />
-            </fieldset>
-            <fieldset class="main__form-item item--short">
-                <label>Email*</label>
-                <input type="email" />
-            </fieldset>
-            <fieldset class="main__form-item item--short">
-                <label>Phone number*</label>
-                <input type="tel" />
-            </fieldset>
-            <fieldset class="main__form-item item--short">
-                <label>Job title*</label>
-                <input type="text" />
-            </fieldset>
-            <fieldset class="main__form-item item--short">
-                <label>Industry*</label>
-                <select>
-                    <option disabled selected>Please Select</option>
-                    <option>Construction</option>
-                    <option>Distribution</option>
-                    <option>Government</option>
-                    <option>Logistics & Transportation</option>
-                    <option>Oil & Gas</option>
-                    <option>Passenger</option>
-                    <option>Services</option>
-                    <option>Other</option>
-                </select>
-            </fieldset>
-            <fieldset class="main__form-item item--long">
-                <label>Company Fleet Size*</label>
-                <input type="number" />
-            </fieldset>
-            <fieldset class="main__form-item item--long">
-                <label>Primary Vehicle Type*</label>
-                <select>
-                    <option disabled selected>Select most common type</option>
-                    <option>Passenger vehicles</option>
-                    <option>Light trucks & vans (class 1-3)</option>
-                    <option>Medium trucks & buses (class 4-6)</option>
-                    <option>Heavy trucks & buses (class 7-8)</option>
-                </select>
-            </fieldset>
-            <fieldset class="main__form-item item--long">
-                <label>Company Headquarters (country)*</label>
-                <select>
-                    <option selected disabled>Select one</option>
-                    <option>United States</option>
-                    <option>Colombia</option>
-                    <option>Mexico</option>
-                    <option>Canada</option>
-                    <option>Japan</option>
-                    <option>Russia</option>
-                </select>
-            </fieldset>
-            <fieldset class="main__form-item item--long">
-                <label>Company Headquarters (state)*</label>
-                <select>
-                    <option selected disabled>Select one</option>
-                    <option>Florida</option>
-                    <option>Georgia</option>
-                    <option>California</option>
-                    <option>Colorado</option>
-                    <option>Alaska</option>
-                    <option>Kansas</option>
-                </select>
-            </fieldset>
-            <fieldset class="main__form-item item--long">
-                <label>Company name</label>
-                <input type="text" />
-            </fieldset>
-            <fieldset class="main__form-item item--long">
-                <label>Message (optional)</label>
-                <textarea cols="30" rows="6"></textarea>
-            </fieldset>
-            <input type="submit" value="Send" class="main__form-submit">
-        </form>
+      <form class="main__form">
+        <label class="main__form-title">Fleet Inquiry Form</label>
+        <fieldset class="main__form-item item--short">
+          <label>First name*</label>
+          <input type="text" />
+        </fieldset>
+        <fieldset class="main__form-item item--short">
+          <label>Last name*</label>
+          <input type="text" />
+        </fieldset>
+        <fieldset class="main__form-item item--short">
+          <label>Email*</label>
+          <input type="email" />
+        </fieldset>
+        <fieldset class="main__form-item item--short">
+          <label>Phone number*</label>
+          <input type="tel" />
+        </fieldset>
+        <fieldset class="main__form-item item--short">
+          <label>Job title*</label>
+          <input type="text" />
+        </fieldset>
+        <fieldset class="main__form-item item--short">
+          <label>Industry*</label>
+          <select>
+            <option disabled selected>Please Select</option>
+            <option>Construction</option>
+            <option>Distribution</option>
+            <option>Government</option>
+            <option>Logistics & Transportation</option>
+            <option>Oil & Gas</option>
+            <option>Passenger</option>
+            <option>Services</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+        <fieldset class="main__form-item item--long">
+          <label>Company Fleet Size*</label>
+          <input type="number" />
+        </fieldset>
+        <fieldset class="main__form-item item--long">
+          <label>Primary Vehicle Type*</label>
+          <select>
+            <option disabled selected>Select most common type</option>
+            <option>Passenger vehicles</option>
+            <option>Light trucks & vans (class 1-3)</option>
+            <option>Medium trucks & buses (class 4-6)</option>
+            <option>Heavy trucks & buses (class 7-8)</option>
+          </select>
+        </fieldset>
+        <fieldset class="main__form-item item--long">
+          <label>Company Headquarters (country)*</label>
+          <select>
+            <option selected disabled>Select one</option>
+            <option>United States</option>
+            <option>Colombia</option>
+            <option>Mexico</option>
+            <option>Canada</option>
+            <option>Japan</option>
+            <option>Russia</option>
+          </select>
+        </fieldset>
+        <fieldset class="main__form-item item--long">
+          <label>Company Headquarters (state)*</label>
+          <select>
+            <option selected disabled>Select one</option>
+            <option>Florida</option>
+            <option>Georgia</option>
+            <option>California</option>
+            <option>Colorado</option>
+            <option>Alaska</option>
+            <option>Kansas</option>
+          </select>
+        </fieldset>
+        <fieldset class="main__form-item item--long">
+          <label>Company name</label>
+          <input type="text" />
+        </fieldset>
+        <fieldset class="main__form-item item--long">
+          <label>Message (optional)</label>
+          <textarea cols="30" rows="6"></textarea>
+        </fieldset>
+        <input type="submit" value="Send" class="main__form-submit" />
+      </form>
     </main>
     <footer class="footer">
-        <section class="footer__main">
-            <div class="footer__main-logo">
-                <img src="./assets/img/logo-icon.svg" alt="" class="footer__main-logo-icon">
-                <label class="footer__main-logo--bigtext">
-                    Copyright 2019<br />
-                    All Rights Reserved
-                </label>
-                <label class="footer__main-logo-smalltext">
-                    &reg; Nauto and the Nauto logo are registered trademarks of Nauto, Inc. in the United States and other countries.
-                </label>
-            </div>
-            <div class="footer__main-options1">
-                <a href="" class="footer__main-options-item item--bold">Product</a>
-                <a href="" class="footer__main-options-item">In-Vehicle Alerts</a>
-                <a href="" class="footer__main-options-item">On-Demand Coaching</a>
-                <a href="" class="footer__main-options-item">Claims Management</a>
-                <a href="" class="footer__main-options-item">Safety Insights</a>
-                <a href="" class="footer__main-options-item">Driver Engagement</a>
-            </div>
-            <div class="footer__main-options2">
-                <a href="" class="footer__main-options-item item--bold">Company</a>
-                <a href="" class="footer__main-options-item">About</a>
-                <a href="" class="footer__main-options-item">News</a>
-                <a href="" class="footer__main-options-item">Events</a>
-                <a href="" class="footer__main-options-item">Blog</a>
-                <a href="" class="footer__main-options-item">Careers</a>
-            </div>
-            <div class="footer__main-options3">
-                <a href="" class="footer__main-options-item item--bold">Partners</a>
-                <a href="" class="footer__main-options-item item--bold">Resources</a>
-                <a href="" class="footer__main-options-item item--bold">Contact</a>
-            </div>
-        </section>
-        <section class="footer__subscribe">
-            <label class="footer__subscribe-label">Sign up to receive updates</label>
-            <div class="footer__subscribe-input">
-                <input class="footer__subscribe-input-email" type="email" placeholder="you@example.com">
-                <input class="footer__subscribe-input-button" type="button" value="Subscribe">
-            </div>
-        </section>
-        <section class="footer__links">
-            <div class="footer__links-social">
-                <a href="">
-                    <img src="./assets/img/facebook.png" alt="Facebook" />
-                </a>
-                <a href="">
-                    <img src="./assets/img/twitter.png" alt="Twitter" />
-                </a>
-                <a href="">
-                    <img src="./assets/img/linkedin.png" alt="LinkedIn" />
-                </a>
-            </div>
-            <div class="footer__links-site">
-                <a href="" class="footer__links-site-item">Customer login</a>
-                <a href="" class="footer__links-site-item">Site privacy</a>
-                <a href="" class="footer__links-site-item">User privacy</a>
-                <a href="" class="footer__links-site-item">Ad notice</a>
-                <a href="" class="footer__links-site-item">Copyright</a>
-            </div>
-        </section>
+      <section class="footer__main">
+        <div class="footer__main-logo">
+          <img
+            src="./assets/img/logo-icon.svg"
+            alt=""
+            class="footer__main-logo-icon"
+          />
+          <label class="footer__main-logo--bigtext">
+            Copyright 2019<br />
+            All Rights Reserved
+          </label>
+          <label class="footer__main-logo-smalltext">
+            &reg; Nauto and the Nauto logo are registered trademarks of Nauto,
+            Inc. in the United States and other countries.
+          </label>
+        </div>
+        <div class="footer__main-options1">
+          <a href="" class="footer__main-options-item item--bold">Product</a>
+          <a href="" class="footer__main-options-item">In-Vehicle Alerts</a>
+          <a href="" class="footer__main-options-item">On-Demand Coaching</a>
+          <a href="" class="footer__main-options-item">Claims Management</a>
+          <a href="" class="footer__main-options-item">Safety Insights</a>
+          <a href="" class="footer__main-options-item">Driver Engagement</a>
+        </div>
+        <div class="footer__main-options2">
+          <a href="" class="footer__main-options-item item--bold">Company</a>
+          <a href="" class="footer__main-options-item">About</a>
+          <a href="" class="footer__main-options-item">News</a>
+          <a href="" class="footer__main-options-item">Events</a>
+          <a href="" class="footer__main-options-item">Blog</a>
+          <a href="" class="footer__main-options-item">Careers</a>
+        </div>
+        <div class="footer__main-options3">
+          <a href="" class="footer__main-options-item item--bold">Partners</a>
+          <a href="" class="footer__main-options-item item--bold">Resources</a>
+          <a href="" class="footer__main-options-item item--bold">Contact</a>
+        </div>
+      </section>
+      <section class="footer__subscribe">
+        <label class="footer__subscribe-label"
+          >Sign up to receive updates</label
+        >
+        <div class="footer__subscribe-input">
+          <input
+            class="footer__subscribe-input-email"
+            type="email"
+            placeholder="you@example.com"
+          />
+          <input
+            class="footer__subscribe-input-button"
+            type="button"
+            value="Subscribe"
+          />
+        </div>
+      </section>
+      <section class="footer__links">
+        <div class="footer__links-social">
+          <a href="">
+            <img src="./assets/img/facebook.png" alt="Facebook" />
+          </a>
+          <a href="">
+            <img src="./assets/img/twitter.png" alt="Twitter" />
+          </a>
+          <a href="">
+            <img src="./assets/img/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div class="footer__links-site">
+          <a href="" class="footer__links-site-item">Customer login</a>
+          <a href="" class="footer__links-site-item">Site privacy</a>
+          <a href="" class="footer__links-site-item">User privacy</a>
+          <a href="" class="footer__links-site-item">Ad notice</a>
+          <a href="" class="footer__links-site-item">Copyright</a>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
