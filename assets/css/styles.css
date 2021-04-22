@@ -56,10 +56,6 @@ fieldset {
 
 /* Responsive */
 @media screen and (max-width: 1200px) {
-  /* Main */
-  .main__form {
-    width: 60%;
-  }
   /* Footer */
   .footer {
     height: 900px;
@@ -110,13 +106,6 @@ fieldset {
 }
 
 @media screen and (max-width: 768px) {
-  .main__form {
-    grid-template-columns: 1fr;
-    height: 1500px;
-  }
-  .item--short {
-    grid-column: 1 / span 2;
-  }
   .footer {
     padding: 80px 20px 50px 50px;
   }
@@ -187,10 +176,6 @@ fieldset {
 }
 
 @media screen and (max-width: 420px) {
-  .main__form {
-    padding: 20px;
-    width: 80%;
-  }
   .footer {
     height: 1630px;
     padding: 80px 20px 50px 40px;
@@ -226,9 +211,6 @@ fieldset {
   .footer {
     height: 1630px;
     padding: 80px 20px 50px 20px;
-  }
-  .main__form {
-    height: 1750px;
   }
   .footer__links-site-item {
     margin: 0;

@@ -89,3 +89,33 @@
   color: #4abf4f;
   cursor: pointer;
 }
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .main__form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__form {
+    grid-template-columns: 1fr;
+    height: 1500px;
+  }
+  .item--short {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main__form {
+    padding: 20px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main__form {
+    height: 1750px;
+  }
+}
